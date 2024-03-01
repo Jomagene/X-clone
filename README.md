@@ -1,2 +1,2 @@
 # X-clone
-This repository is to create a complete X-clone using reactJs
+This repository is for creating a complete React.js X-clone.
