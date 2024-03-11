@@ -1,7 +1,7 @@
-export default function Button() {
+export default function Button({ msg }) {
   return (
     <button className="button" type="submit">
-      Tweet
+      {msg}
     </button>
   );
 }

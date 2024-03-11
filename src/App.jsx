@@ -1,10 +1,11 @@
 import "./App.css";
+import Sidebar from "./Components/Sidebar";
 import Timeline from "./Components/Timeline";
 
 export default function App() {
   return (
     <>
-      <div></div>
+      <Sidebar />
       <Timeline />
       <div></div>
     </>

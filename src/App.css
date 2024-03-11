@@ -192,3 +192,29 @@ body {
   justify-content: center;
   gap: 20px;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: auto;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.item-menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.item-menu span {
+  font-weight: 700;
+  font-size: 19px;
+  font-family: "inter";
+  color: #cacaca;
+}
+
+.item-menu img {
+  width: 24px;
+}

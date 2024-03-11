@@ -9,6 +9,15 @@ import Schedule from "../assets/Icons/Schedule.svg";
 import Share from "../assets/Icons/Share.svg";
 import TimelineProp from "../assets/Icons/Timeline-Prop.svg";
 import Verified from "../assets/Icons/Verified.svg";
+import Bookmarks from "../assets/Icons/Bookmarks.svg";
+import Explore from "../assets/Icons/Explore.svg";
+import HomeFill from "../assets/Icons/Home-Fill.svg";
+import Lists from "../assets/Icons/Lists.svg";
+import Messages from "../assets/Icons/Messages.svg";
+import More from "../assets/Icons/More.svg";
+import Notifications from "../assets/Icons/Notifications.svg";
+import Profile from "../assets/Icons/Profile.svg";
+import Twitter from "../assets/Icons/Twitter.svg";
 
 import CNNp from "../assets/images/CNN-pic.png";
 import NewYorkTimes from "../assets/images/NewYorkTimes-pic.png";
@@ -33,4 +42,13 @@ export {
   Principal3,
   ProfilePhoto,
   TweeterPic,
+  Bookmarks,
+  Explore,
+  HomeFill,
+  Lists,
+  Messages,
+  More,
+  Notifications,
+  Profile,
+  Twitter,
 };
