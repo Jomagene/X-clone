@@ -14,7 +14,7 @@ body {
 }
 
 .timeline {
-  flex: 0 0 800px;
+  flex: 0 0 660px;
   font-family: "Inter", sans-serif;
   border-left: 1px solid #2f3336;
   border-right: 1px solid #2f3336;
@@ -56,6 +56,10 @@ body {
   max-width: 100%;
   max-height: 100px;
   border-radius: 100%;
+}
+
+.avatar-details img {
+  margin-left: 10px;
 }
 
 .tweet-editor-form {
@@ -111,8 +115,6 @@ body {
 }
 
 .tweet-avatar {
-  /* height: 70px;
-  width: 70px; */
   flex: 0 0 70px;
 }
 
@@ -147,6 +149,7 @@ body {
   height: auto;
 }
 .tweet-title-author {
+  font-weight: 500;
   font-size: 1rem;
 }
 .tweet-title-details {
@@ -196,10 +199,16 @@ body {
 .sidebar {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 25%;
+}
+
+.sidebar > :first-child {
+  display: flex;
+  flex-direction: column;
   gap: 40px;
   width: auto;
-  padding-top: 40px;
-  padding-left: 50px;
 }
 
 .item-menu {
@@ -217,4 +226,11 @@ body {
 
 .item-menu img {
   width: 24px;
+}
+
+.profile-settings {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 1rem;
 }

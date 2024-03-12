@@ -15,9 +15,11 @@ import HomeFill from "../assets/Icons/Home-Fill.svg";
 import Lists from "../assets/Icons/Lists.svg";
 import Messages from "../assets/Icons/Messages.svg";
 import More from "../assets/Icons/More.svg";
+import More_ from "../assets/Icons/More_.svg";
 import Notifications from "../assets/Icons/Notifications.svg";
 import Profile from "../assets/Icons/Profile.svg";
 import Twitter from "../assets/Icons/Twitter.svg";
+import Private from "../assets/Icons/Private.svg";
 
 import CNNp from "../assets/images/CNN-pic.png";
 import NewYorkTimes from "../assets/images/NewYorkTimes-pic.png";
@@ -48,7 +50,9 @@ export {
   Lists,
   Messages,
   More,
+  More_,
   Notifications,
   Profile,
   Twitter,
+  Private,
 };
