@@ -1,9 +1,7 @@
-import { ProfilePhoto } from "../../../data/icons_images";
-
-export default function Avatar() {
+export default function Avatar({ src }) {
   return (
     <div className="Avatar">
-      <img src={ProfilePhoto} alt="Profile picture" />
+      <img src={src} alt="Profile picture" />
     </div>
   );
 }

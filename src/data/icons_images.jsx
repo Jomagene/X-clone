@@ -20,6 +20,8 @@ import Notifications from "../assets/Icons/Notifications.svg";
 import Profile from "../assets/Icons/Profile.svg";
 import Twitter from "../assets/Icons/Twitter.svg";
 import Private from "../assets/Icons/Private.svg";
+import IconsSearch from "../assets/Icons/Search.svg";
+import Settings from "../assets/Icons/Settings.svg";
 
 import CNNp from "../assets/images/CNN-pic.png";
 import NewYorkTimes from "../assets/images/NewYorkTimes-pic.png";
@@ -55,4 +57,6 @@ export {
   Profile,
   Twitter,
   Private,
+  IconsSearch,
+  Settings,
 };
