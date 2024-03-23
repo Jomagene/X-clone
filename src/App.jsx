@@ -15,6 +15,7 @@ import {
   ProfilePhoto,
   TweeterPic,
 } from "./data/icons_images";
+import Error404 from "./pages/Error404";
 
 export default function App() {
   const router = createBrowserRouter(
@@ -28,6 +29,7 @@ export default function App() {
           element={<Profile src={NewYorkTimes} />}
         />
         <Route path="/Twitter" element={<Profile src={TweeterPic} />} />
+        <Route path="/*" element={<Error404 />} />
       </Route>
     )
   );
