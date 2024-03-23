@@ -2,11 +2,13 @@ import TweetDatas from "../../data/tweet_data";
 import ProfileSettings from "../Sidebar/ProfileSettings";
 import TrendsForYou from "./TrendLists/TrendsForYou";
 import ShowMore from "./TrendLists/ShowMore";
+import Verified from "../../assets/Icons/Verified";
+import Settings from "../../assets/Icons/Settings";
 
 export default function FolowLists() {
   return (
     <div className="trend-lists">
-      <TrendsForYou content="Who to follow" icon={""} />
+      <TrendsForYou content="Who to follow" />
       {TweetDatas.map((content, index) =>
         index < 3 ? (
           <ProfileSettings
@@ -14,8 +16,7 @@ export default function FolowLists() {
             img={content.avatar}
             author={content.content.body.title.author}
             data={content.content.body.title.reference}
-            src={content.content.body.title.verification}
-            alt="Iconne Verified"
+            src=<Verified />
             btn="Follow"
           />
         ) : (

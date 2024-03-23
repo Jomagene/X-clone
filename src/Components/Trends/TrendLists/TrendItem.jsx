@@ -6,7 +6,7 @@ export default function TrendItem({ obj }) {
         <span className="tag">{obj.tag}</span>
         <span className="tweet-title-details">{obj.count}</span>
       </div>
-      <img src={obj.icon} />
+      {obj.icon}
     </div>
   );
 }

@@ -1,7 +1,8 @@
 export default function TweetAction({ count, icon }) {
+  console.log(icon);
   return (
     <div className="tweet-action">
-      <img src={icon} />
+      {icon}
       <span>{count}</span>
     </div>
   );

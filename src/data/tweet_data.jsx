@@ -1,14 +1,8 @@
-import {
-  React,
-  Reply,
-  Retweet,
-  Share,
-  Verified,
-  CNNp,
-  NewYorkTimes,
-  Principal3,
-  TweeterPic,
-} from "./icons_images";
+import Reply from "../assets/Icons/Reply";
+import Retweet from "../assets/Icons/Retweet";
+import React from "../assets/Icons/React";
+import Share from "../assets/Icons/Share";
+import { CNNp, NewYorkTimes, Principal3, TweeterPic } from "./icons_images";
 
 const TweetDatas = [
   {
@@ -17,7 +11,7 @@ const TweetDatas = [
       body: {
         title: {
           author: "CNN",
-          verification: Verified,
+          verification: "",
           reference: "@CNN",
           dot: ".",
           date: "7m",
@@ -27,10 +21,10 @@ const TweetDatas = [
       },
       action: {
         actions: [
-          { img: Reply, count: "57" },
-          { img: Retweet, count: "144" },
-          { img: React, count: "184" },
-          { img: Share, count: "" },
+          { img: <React />, count: "57" },
+          { img: <Reply />, count: "144" },
+          { img: <Retweet />, count: "184" },
+          { img: <Share />, count: "" },
         ],
       },
     },
@@ -41,7 +35,7 @@ const TweetDatas = [
       body: {
         title: {
           author: "The New York Times",
-          verification: Verified,
+          verification: "",
           reference: "@nytimes",
           dot: ".",
           date: "2h",
@@ -51,10 +45,10 @@ const TweetDatas = [
       },
       action: {
         actions: [
-          { img: Reply, count: "19" },
-          { img: Retweet, count: "48" },
-          { img: React, count: "482" },
-          { img: Share, count: "" },
+          { img: <React />, count: "19" },
+          { img: <Reply />, count: "48" },
+          { img: <Retweet />, count: "482" },
+          { img: <Share />, count: "" },
         ],
       },
     },
@@ -65,7 +59,7 @@ const TweetDatas = [
       body: {
         title: {
           author: "Twitter",
-          verification: Verified,
+          verification: "",
           reference: "@Twitter",
           dot: ".",
           date: "Oct 29",
@@ -75,10 +69,10 @@ const TweetDatas = [
       },
       action: {
         actions: [
-          { img: Reply, count: "6.8K" },
-          { img: Retweet, count: "36.6K" },
-          { img: React, count: "267.1K" },
-          { img: Share, count: "" },
+          { img: <React />, count: "6.8K" },
+          { img: <Reply />, count: "36.6K" },
+          { img: <Retweet />, count: "267.1K" },
+          { img: <Share />, count: "" },
         ],
       },
     },
@@ -89,7 +83,7 @@ const TweetDatas = [
       body: {
         title: {
           author: "Twitter",
-          verification: Verified,
+          verification: "",
           reference: "@Twitter",
           dot: ".",
           date: "Oct 4",
@@ -99,10 +93,10 @@ const TweetDatas = [
       },
       action: {
         actions: [
-          { img: Reply, count: "118.7K" },
-          { img: Retweet, count: "785.4K" },
-          { img: React, count: "3.3M" },
-          { img: Share, count: "" },
+          { img: <React />, count: "118.7K" },
+          { img: <Reply />, count: "785.4K" },
+          { img: <Retweet />, count: "3.3M" },
+          { img: <Share />, count: "" },
         ],
       },
     },
@@ -113,7 +107,7 @@ const TweetDatas = [
       body: {
         title: {
           author: "Twitter",
-          verification: Verified,
+          verification: "",
           reference: "@Twitter",
           dot: ".",
           date: "Oct 4",
@@ -123,10 +117,10 @@ const TweetDatas = [
       },
       action: {
         actions: [
-          { img: Reply, count: "57K" },
-          { img: Retweet, count: "14.4K" },
-          { img: React, count: "184.8K" },
-          { img: Share, count: "" },
+          { img: <React />, count: "57K" },
+          { img: <Reply />, count: "14.4K" },
+          { img: <Retweet />, count: "184.8K" },
+          { img: <Share />, count: "" },
         ],
       },
     },

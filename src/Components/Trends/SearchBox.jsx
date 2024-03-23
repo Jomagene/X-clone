@@ -1,9 +1,7 @@
-import { IconsSearch } from "../../data/icons_images";
-
 export default function SearchBox() {
   return (
     <form className="search-box">
-      <img src={IconsSearch} />
+      <img src="" />
       <input placeholder="Search Twitter" />
     </form>
   );

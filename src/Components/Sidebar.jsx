@@ -2,7 +2,8 @@ import ItemMenu from "./Sidebar/ItemMenu";
 import pages from "../data/menus";
 import Button from "./Timeline/Tweet-Editor/Tweet-Editor-Form/Tweet-Editor-Buttons/Button";
 import ProfileSettings from "./Sidebar/ProfileSettings";
-import { Private, ProfilePhoto } from "../data/icons_images";
+import { ProfilePhoto } from "../data/icons_images";
+import Private from "../assets/Icons/Private";
 
 export default function Sidebar() {
   return (
@@ -17,8 +18,7 @@ export default function Sidebar() {
         img={ProfilePhoto}
         author="Gradley Ortiz"
         data="@bradley_"
-        src={Private}
-        alt="Market icon"
+        src=<Private />
         btn=""
       />
     </div>

@@ -1,7 +1,9 @@
-import { TimelineProp } from "../../../data/icons_images";
+import TimelineProp from "../../../assets/Icons/TimelineProp";
 
 export default function TopTweets() {
   return (
-    <img src={TimelineProp} className="top-tweets" alt="Timeline prop icon" />
+    <div className="top-tweets">
+      <TimelineProp />
+    </div>
   );
 }

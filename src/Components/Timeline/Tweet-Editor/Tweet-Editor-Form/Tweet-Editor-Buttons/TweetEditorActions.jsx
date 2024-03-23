@@ -1,28 +1,26 @@
-import {
-  Media,
-  Gif,
-  Emoji,
-  Poll,
-  Schedule,
-} from "../../../../../data/icons_images";
+import Emoji from "../../../../../assets/Icons/Emoji";
+import Gif from "../../../../../assets/Icons/Gif";
+import Media from "../../../../../assets/Icons/Media";
+import Poll from "../../../../../assets/Icons/Poll";
+import Schedule from "../../../../../assets/Icons/Schedule";
 
 export default function TweetEditorActions() {
   return (
     <div className="tweet-editor-actions">
       <button>
-        <img src={Media} alt="Media Icon" />
+        <Media />
       </button>
       <button>
-        <img src={Gif} alt="Gif Icon" />
+        <Gif />
       </button>
       <button>
-        <img src={Poll} alt="Poll Icon" />
+        <Poll />
       </button>
       <button>
-        <img src={Emoji} alt="Emoji Icon" />
+        <Emoji />
       </button>
       <button>
-        <img src={Schedule} alt="Schedule Icon" />
+        <Schedule />
       </button>
     </div>
   );
