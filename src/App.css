@@ -14,7 +14,7 @@ body {
 }
 
 .timeline {
-  flex: 0 0 660px;
+  flex: 0 0 600px;
   font-family: "Inter", sans-serif;
   border-left: 1px solid #2f3336;
   border-right: 1px solid #2f3336;
@@ -95,7 +95,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  /*padding: 0.8rem 0;*/
   gap: 1rem;
 }
 .tweet-editor-actions button {
@@ -192,11 +191,11 @@ body {
 
 .tweet-actions {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 5rem;
   color: grey;
   font-size: 1rem;
+  width: 100%;
 }
 
 .tweet-action * {
@@ -208,7 +207,14 @@ body {
   height: auto;
   color: #2f3336;
 }
-.tweet-action:hover {
+.tweet-action1 {
+  font-size: 16px;
+  font-family: "Inter";
+  background-color: transparent;
+  border: none;
+  color: #65686a;
+}
+.tweet-action1:hover {
   cursor: pointer;
 }
 .react,
@@ -222,44 +228,57 @@ body {
   width: 40px;
   border-radius: 50%;
 }
+.tooltip {
+  font-size: small;
+  background-color: #1a3948;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  margin: 3px;
+  padding: 2px;
+}
+.tweet-action1:active + .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
 
-.tweet-action:hover .react {
+.tweet-action1:hover .react {
   background-color: rgb(36, 68, 100);
 }
-.tweet-action:hover .reply {
+.tweet-action1:hover .reply {
   background-color: rgb(36, 100, 82);
 }
-.tweet-action:hover .retweet {
+.tweet-action1:hover .retweet {
   background-color: rgb(98, 47, 47);
 }
-.tweet-action:hover .share {
+.tweet-action1:hover .share {
   background-color: rgb(98, 95, 47);
 }
 
-.tweet-action:hover .react path {
+.tweet-action1:hover .react path {
   fill: #4cbbf2;
 }
-.tweet-action:hover .reply path {
+.tweet-action1:hover .reply path {
   fill: #3bcdc1;
 }
-.tweet-action:hover .retweet path {
+.tweet-action1:hover .retweet path {
   fill: #f24646;
 }
-.tweet-action:hover .share path {
+.tweet-action1:hover .share path {
   fill: rgb(244, 236, 114);
 }
 
-.tweet-action:hover .react + span {
+.tweet-action1:hover .react + span {
   color: #4cbbf2;
 }
-.tweet-action:hover .reply + span {
+.tweet-action1:hover .reply + span {
   color: #3bcd82;
 }
-.tweet-action:hover .retweet + span {
+.tweet-action1:hover .retweet + span {
   color: #f24646;
 }
 
-.tweet-action {
+.tweet-action1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,7 +296,7 @@ body {
 .sidebar > :first-child {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .item-menu {
@@ -376,6 +395,28 @@ body {
 .show-more {
   color: #1d9bf0;
   font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.heading-profile {
+  height: 100px;
+  margin: 20px;
+  background-color: #434242;
+}
+.heading-profile div {
+  position: relative;
+  top: 65px;
+  left: 70px;
+  height: 80px;
+  width: 80px;
+  background-color: #20303b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {

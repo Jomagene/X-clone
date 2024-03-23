@@ -5,7 +5,12 @@ export default function TweetActions({ action }) {
     <div className="tweet-actions">
       {action.actions.map((element, index) => {
         return (
-          <TweetAction icon={element.img} count={element.count} key={index} />
+          <TweetAction
+            icon={element.img}
+            count={element.count}
+            key={index}
+            msg={element.msg}
+          />
         );
       })}
     </div>

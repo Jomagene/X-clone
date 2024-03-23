@@ -1,9 +1,11 @@
-export default function TweetAction({ count, icon }) {
-  console.log(icon);
+export default function TweetAction({ count, icon, msg }) {
   return (
     <div className="tweet-action">
-      {icon}
-      <span>{count}</span>
+      <button className="tweet-action1">
+        {icon}
+        <span>{count}</span>
+      </button>
+      <span className="tooltip">{msg}</span>
     </div>
   );
 }

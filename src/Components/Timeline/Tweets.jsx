@@ -5,7 +5,7 @@ export default function Tweets() {
   return (
     <div className="tweets">
       {TweetDatas.map((el, index) => {
-        return <Tweet tweets={el} key={index} />;
+        return <Tweet tweets={el} key={index} order={index} />;
       })}
     </div>
   );

@@ -1,9 +1,8 @@
 import TweetDatas from "../../data/tweet_data";
-import ProfileSettings from "../Sidebar/ProfileSettings";
 import TrendsForYou from "./TrendLists/TrendsForYou";
 import ShowMore from "./TrendLists/ShowMore";
 import Verified from "../../assets/Icons/Verified";
-import Settings from "../../assets/Icons/Settings";
+import ProfileSettings from "./FolowLists/ProfileSettings";
 
 export default function FolowLists() {
   return (

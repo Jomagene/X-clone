@@ -1,7 +1,13 @@
-export default function TweetAvatar({ avatar }) {
+import { Link } from "react-router-dom";
+
+export default function TweetAvatar({ avatar, order }) {
   return (
-    <div className="tweet-avatar">
-      <img src={avatar} alt="New York Times picture" />
-    </div>
+    <Link
+      to={order == 0 ? "/CNN" : order == 1 ? "/The New York Times" : "/Twitter"}
+    >
+      <div className="tweet-avatar">
+        <img src={avatar} />
+      </div>
+    </Link>
   );
 }
