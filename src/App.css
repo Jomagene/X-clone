@@ -18,6 +18,7 @@ body {
   font-family: "Inter", sans-serif;
   border-left: 1px solid #2f3336;
   border-right: 1px solid #2f3336;
+  margin-left: 315px;
 }
 
 .header {
@@ -290,6 +291,8 @@ body {
   justify-content: space-between;
   padding: 20px;
   width: 260px;
+  height: 95vh;
+  position: fixed;
   > :first-child {
     display: flex;
     flex-direction: column;
