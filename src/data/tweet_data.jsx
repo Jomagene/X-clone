@@ -21,9 +21,9 @@ const TweetDatas = [
       },
       action: {
         actions: [
+          { img: <React />, count: "57", msg: "Like" },
           { img: <Reply />, count: "144", msg: "Reply" },
           { img: <Retweet />, count: "184", msg: "Repost" },
-          { img: <React />, count: "57", msg: "Like" },
           { img: <Share />, count: "", msg: "Share" },
         ],
       },
@@ -45,9 +45,9 @@ const TweetDatas = [
       },
       action: {
         actions: [
+          { img: <React />, count: "19", msg: "Like" },
           { img: <Reply />, count: "48", msg: "Reply" },
           { img: <Retweet />, count: "482", msg: "Repost" },
-          { img: <React />, count: "19", msg: "Like" },
           { img: <Share />, count: "", msg: "Share" },
         ],
       },
@@ -69,9 +69,9 @@ const TweetDatas = [
       },
       action: {
         actions: [
+          { img: <React />, count: "6.8K", msg: "Like" },
           { img: <Reply />, count: "36.6K", msg: "Reply" },
           { img: <Retweet />, count: "267.1K", msg: "Repost" },
-          { img: <React />, count: "6.8K", msg: "Like" },
           { img: <Share />, count: "", msg: "Share" },
         ],
       },
@@ -93,9 +93,9 @@ const TweetDatas = [
       },
       action: {
         actions: [
+          { img: <React />, count: "118.7K", msg: "Like" },
           { img: <Reply />, count: "785.4K", msg: "Reply" },
           { img: <Retweet />, count: "3.3M", msg: "Repost" },
-          { img: <React />, count: "118.7K", msg: "Like" },
           { img: <Share />, count: "", msg: "Share" },
         ],
       },
@@ -117,9 +117,9 @@ const TweetDatas = [
       },
       action: {
         actions: [
+          { img: <React />, count: "57K", msg: "Like" },
           { img: <Reply />, count: "14.4K", msg: "Reply" },
           { img: <Retweet />, count: "184.8K", msg: "Repost" },
-          { img: <React />, count: "57K", msg: "Like" },
           { img: <Share />, count: "", msg: "Share" },
         ],
       },

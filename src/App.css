@@ -50,24 +50,23 @@ body {
 .avatar {
   flex: 0 0 70px;
   padding: 0;
-}
-
-.avatar img {
-  max-width: 100%;
-  max-height: 100px;
-  border-radius: 100%;
-  margin: 0;
+  img {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 100%;
+    margin: 0;
+  }
 }
 
 .avatar-details {
   display: flex;
   align-items: flex-start;
   gap: 5px;
+  .labels {
+    width: 100px;
+  }
 }
 
-.avatar-details .labels {
-  width: 100px;
-}
 .tweet-editor-form {
   flex: auto;
 }
@@ -89,6 +88,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  .button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    background-color: #1d9bf0;
+    color: white;
+    font-size: 1rem;
+  }
 }
 
 .tweet-editor-actions {
@@ -96,18 +103,10 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
-}
-.tweet-editor-actions button {
-  background-color: transparent;
-  border: none;
-}
-.tweet-editor-buttons .button {
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 50px;
-  background-color: #1d9bf0;
-  color: white;
-  font-size: 1rem;
+  button {
+    background-color: transparent;
+    border: none;
+  }
 }
 
 .sidebar > :first-child button {
@@ -125,25 +124,25 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 20px;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   border-bottom: 1px solid #2f3336;
 }
 
 .tweet-avatar {
   flex: 0 0 70px;
+  img {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 100%;
+  }
 }
 
-.tweet-avatar img {
-  max-width: 100%;
-  max-height: 100px;
-  border-radius: 100%;
-}
 .tweet-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 10px;
   width: 100%;
 }
 .tweet-body {
@@ -157,11 +156,10 @@ body {
   align-items: flex-start;
   gap: 10px;
   font-size: 1rem;
-}
-
-.tweet-title svg {
-  width: 1.2rem;
-  height: auto;
+  svg {
+    width: 1.2rem;
+    height: auto;
+  }
 }
 .tweet-title-author {
   font-weight: 500;
@@ -178,15 +176,14 @@ body {
 .tweet-image {
   max-width: 100%;
   padding: 0.3rem 0 0 0;
-}
-
-.tweet-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50px;
-  border-color: #2f3336;
-  border-style: solid;
-  border-width: 1px;
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border-color: #2f3336;
+    border-style: solid;
+    border-width: 1px;
+  }
 }
 
 .tweet-actions {
@@ -196,27 +193,32 @@ body {
   color: grey;
   font-size: 1rem;
   width: 100%;
+  svg {
+    width: 1.3rem;
+    height: auto;
+    color: #2f3336;
+  }
 }
 
 .tweet-action * {
   transition: 0.15s;
 }
 
-.tweet-actions svg {
-  width: 1.3rem;
-  height: auto;
-  color: #2f3336;
-}
 .tweet-action1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
   font-size: 16px;
   font-family: "Inter";
   background-color: transparent;
   border: none;
   color: #65686a;
+  &:hover {
+    cursor: pointer;
+  }
 }
-.tweet-action1:hover {
-  cursor: pointer;
-}
+
 .react,
 .retweet,
 .reply,
@@ -242,47 +244,44 @@ body {
   opacity: 1;
 }
 
-.tweet-action1:hover .react {
-  background-color: rgb(36, 68, 100);
-}
-.tweet-action1:hover .reply {
-  background-color: rgb(36, 100, 82);
-}
-.tweet-action1:hover .retweet {
-  background-color: rgb(98, 47, 47);
-}
-.tweet-action1:hover .share {
-  background-color: rgb(98, 95, 47);
-}
-
-.tweet-action1:hover .react path {
-  fill: #4cbbf2;
-}
-.tweet-action1:hover .reply path {
-  fill: #3bcdc1;
-}
-.tweet-action1:hover .retweet path {
-  fill: #f24646;
-}
-.tweet-action1:hover .share path {
-  fill: rgb(244, 236, 114);
+/* Definition de la variable hue */
+.tweet-action1:hover {
+  .share {
+    --hue: 56;
+  }
+  .react,
+  .react + span {
+    --hue: 210;
+  }
+  .reply,
+  .reply + span {
+    --hue: 150;
+  }
+  .retweet,
+  .retweet + span {
+    --hue: 0;
+  }
 }
 
-.tweet-action1:hover .react + span {
-  color: #4cbbf2;
-}
-.tweet-action1:hover .reply + span {
-  color: #3bcd82;
-}
-.tweet-action1:hover .retweet + span {
-  color: #f24646;
-}
+/* Utilisation de la variable on hover de tweet-action1*/
+.tweet-action1:hover {
+  .share,
+  .react,
+  .reply,
+  .retweet {
+    background-color: hsl(var(--hue), 30%, 20%);
+  }
 
-.tweet-action1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  .share path,
+  .react path,
+  .reply path,
+  .retweet path,
+  .react + span,
+  .reply + span,
+  .retweet + span {
+    fill: hsl(var(--hue), 90%, 70%);
+    color: hsl(var(--hue), 90%, 70%);
+  }
 }
 
 .sidebar {
@@ -291,18 +290,20 @@ body {
   justify-content: space-between;
   padding: 20px;
   width: 260px;
-}
-
-.sidebar > :first-child {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  > :first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .item-menu {
   display: flex;
   gap: 20px;
   align-items: center;
+  img {
+    width: 24px;
+  }
 }
 
 .item-menu span,
@@ -313,24 +314,19 @@ body {
   color: #cacaca;
 }
 
-.item-menu img {
-  width: 24px;
-}
-
 .profile-settings {
   display: flex;
   align-items: center;
   gap: 20px;
   font-size: 1rem;
   justify-content: space-between;
-}
-
-.profile-settings button {
-  padding: 7px 15px;
-  width: 90px;
-  height: 40px;
-  border-radius: 40px;
-  border: none;
+  button {
+    padding: 7px 15px;
+    width: 90px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+  }
 }
 
 .search-box {
@@ -341,15 +337,14 @@ body {
   height: 25px;
   background: #202327;
   border-radius: 25px;
-}
-
-.search-box input {
-  height: 20px;
-  background-color: #202327;
-  border: none;
-  outline: none;
-  font-size: 17px;
-  color: white;
+  input {
+    height: 20px;
+    background-color: #202327;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    color: white;
+  }
 }
 
 .trends {
@@ -377,13 +372,12 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
-}
-
-.trend-content .title {
-  font-weight: 600;
-  font-size: 22px;
-  font-family: "inter";
-  color: #cacaca;
+  .title {
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "inter";
+    color: #cacaca;
+  }
 }
 
 .trend-lists {
@@ -401,30 +395,31 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 .heading-profile {
   height: 100px;
   margin: 20px;
   background-color: #434242;
-}
-.heading-profile div {
-  position: relative;
-  top: 65px;
-  left: 70px;
-  height: 80px;
-  width: 80px;
-  background-color: #20303b;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.heading-profile .error-page {
-  background-color: rgb(188, 0, 0);
-  border-radius: 5%;
-  width: 200px;
-  box-shadow: rgba(255, 0, 0, 0.4) 0px 2px 4px,
-    rgba(255, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(255, 0, 0, 0.2) 0px -3px 0px inset;
+  div {
+    position: relative;
+    top: 65px;
+    left: 70px;
+    height: 80px;
+    width: 80px;
+    background-color: #20303b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .error-page {
+    background-color: rgb(188, 0, 0);
+    border-radius: 5%;
+    width: 200px;
+    box-shadow: rgba(255, 0, 0, 0.4) 0px 2px 4px,
+      rgba(255, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(255, 0, 0, 0.2) 0px -3px 0px inset;
+  }
 }
 
 footer {
